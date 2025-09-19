@@ -1,0 +1,19 @@
+/* src/ui/xpBoostButton.css */
+
+.xp-boost-btn {
+  background: linear-gradient(90deg, #ff9a00, #ff2d55);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 6px rgba(255, 45, 85, 0.5);
+}
+
+.xp-boost-btn:hover,
+.xp-boost-btn:active {
+  box-shadow: 0 0 16px rgba(255, 45, 85, 0.9);
+  transform: scale(1.05);
+}
