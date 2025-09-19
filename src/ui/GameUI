@@ -1,0 +1,8 @@
+<!-- Example button -->
+<button class="xp-boost-btn" onclick="triggerXPBoost()">
+  ⚡ XP Boost
+</button>
+
+<script type="module">
+  import { triggerXPBoost } from './xpBoostButton.js';
+</script>
