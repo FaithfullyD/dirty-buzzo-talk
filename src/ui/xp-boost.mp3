@@ -1,0 +1,19 @@
+function triggerXPBoost() {
+  console.log("⚡ XP Boost Activated!");
+
+  // 🐝 Buzz effect (vibrate)
+  if (navigator.vibrate) {
+    navigator.vibrate([100, 50, 100]);
+  }
+
+  // ⭐ Visual flash
+  const btn = document.querySelector(".xp-boost-btn");
+  if (btn) {
+    btn.classList.add("buzz-active");
+    setTimeout(() => btn.classList.remove("buzz-active"), 300);
+  }
+
+  // 🔊 Play sound
+  const audio = new Audio("/xp-boost.mp3");
+  audio.play().catch(err => console.warn("Audio playback failed:", err));
+}
