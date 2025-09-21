@@ -10,6 +10,10 @@ export default function App() {
     setScore(prev => prev + points);
   }
 
+  function resetScore() {
+    setScore(0);
+  }
+
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>🐝 Dirty Buzzo</h1>
@@ -18,8 +22,8 @@ export default function App() {
       {/* XP Boost Button */}
       <XpBoostButton onBoost={() => addPoints(10)} />
 
-      {/* Score Tracker */}
-      <ScoreBoard score={score} />
+      {/* Score Tracker with Reset */}
+      <ScoreBoard score={score} onReset={resetScore} />
     </div>
   );
 }
